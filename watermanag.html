@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exposing the Voids</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    
+    <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" rel="stylesheet">
+    
+    <!-- Load our styles -->
+    <link href="./watermanag_style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+
+    <div class="menutext"> 
+    <a href="index.html"> <div class="menulink"><menutext>  HOME // </menutext> </div></a>
+       <a href="about.html"> <div class="menulink"><menutext>  ABOUT // </menutext></div></a>
+      <a href="old-maps.html"> <div class="menulink"><menutext>  OLD MAPS //</menutext></div></a>
+      <a href="popdots.html"> <div class="menulink"><menutext>  POPULATION DOTS // </menutext></div></a>
+      <a href="watermanag.html"> <div class="menulink"><menutext>  WATER MANAGEMENT PROJECTS </menutext></div></a>
+  </div> 
+    
+  <div class="map-wrapper">
+          
+      <div id="map"></div>
+        <div class="sidebar"><par><br><br><br><b>Click on the points on the world map to see information about the project.</b> <br><br>Orange points are Dutch dredging projects from before 1955. <br><br>Green points are recent or ongoing projects that were added by users. They contain more detailed information than the orange points. </par><br>
+        <div class="sidebar-feature-content"></div>
+        </div>
+       
+      <div>
+         <button onclick="location.href='./addproject.html'" type="button">
+           ADD PROJECT</button>
+      </div>       
+  </div>
+    
+   
+    <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://libs.cartocdn.com/carto.js/v4.1.11/carto.min.js"></script>
+    
+    <!-- Load our JavaScript -->
+    <script src="./watermanag_script.js"></script>
+  </body>
+</html>

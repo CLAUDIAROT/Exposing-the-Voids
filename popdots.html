@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Exposing the Voids</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" rel="stylesheet">
+    <link href="./popdots_style.css" rel="stylesheet">
+  </head>
+  <body>
+  <!-- MENU  -->    
+    <div class="menutext"> 
+    <a href="index.html"> <div class="menulink"><menutext>  HOME // </menutext> </div></a>
+       <a href="about.html"> <div class="menulink"><menutext>  ABOUT // </menutext></div></a>
+      <a href="old-maps.html"> <div class="menulink"><menutext>  OLD MAPS //</menutext></div></a>
+      <a href="popdots.html"> <div class="menulink"><menutext>  POPULATION DOTS // </menutext></div></a>
+      <a href="watermanag.html"> <div class="menulink"><menutext>  WATER MANAGEMENT PROJECTS </menutext></div></a>
+  </div> 
+    
+    <br>
+    <h2>The Population of the Netherlands</h2>
+     <h3>A Density Map</h3>
+
+<!-- MAP  -->  
+   <div class="map-wrapper">
+      <div id="map"></div>
+     <div class="sidebar"><par>Click anywhere to see how many people live within a 7 km radius of that point. Zoom in to see more detail. Each dot represents 50 people.<br></par><br>
+
+       <!-- SIDEBAR  -->  
+        <div class="sidebar-feature-content-none">
+        </div>
+          <br>
+        <div class="sidebar-feature-content-nw">
+        </div>
+          <br>
+        <div class="sidebar-feature-content-w">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://libs.cartocdn.com/carto.js/v4.1.11/carto.min.js"></script>
+    
+    <!-- Load Promises polyfill -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+    
+    <!-- Load Fetch polyfill -->
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.4/fetch.js"></script>
+    
+    <script src="./popdots_script.js"></script>
+  </body>
+</html>

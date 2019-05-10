@@ -1,0 +1,140 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #000;
+}
+
+a:hover {
+  color: #eb5b1c;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h2 {
+  font-family: courier;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+
+}
+
+h3 {
+  font-family: courier;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+
+}
+
+par {
+  font-family: courier;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+.map-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#map {
+  position: absolute;
+  height: 100%;
+  width: 75%;
+}
+
+/*
+ * We position the sidebar to the right by using float and setting the width
+ * to 100% - the width of the map, in this case 100% - 75% = 25%
+ */
+.sidebar {
+  background: #000;
+  float: right;
+  height: 100%;
+  padding: 10px;
+  width: 25%;
+  font-family: courier;
+  color: #009e8a;
+}
+
+.sidebar-footer {
+  margin-top: 75px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+    background-color: black;
+  }
+  
+  .sidebar {
+  background: black;
+  float: right;
+  height: 40%;
+  padding: 10px;
+  width: 20%;
+  font-family: courier;
+  font-size: 15px;
+}
+}
+
+  .sidebar-feature-content-none {
+  color: #109e8b
+}
+
+  .sidebar-feature-content-w {
+  color: #ebbc0d
+}
+
+  .sidebar-feature-content-nw {
+  color: #ab22a7
+}
+
+h3 {
+  font-family: courier;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+
+}
+
+.menu {
+  display: inline;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: courier;
+
+}
+
+.menulink
+{
+  display: inline; 
+  color:white;
+  text-align: center;
+  text-decoration: none; 
+  background-color: none;
+}
+
+.menutext {
+  position: absolute;
+  display: inline; 
+  z-index: 15;
+  right: 10%;
+  left: 10%;
+  font-family: courier;
+  font-size: 20px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+
+}

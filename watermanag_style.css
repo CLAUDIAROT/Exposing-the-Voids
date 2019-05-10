@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: courier;
+}
+
+a:hover {
+  color: #eb5b1c;
+}
+
+/* .map-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+} */
+
+#map {
+  position: absolute;
+  top: 30px;
+  height: 100%;
+  width: 79%;
+}
+
+
+
+/* .layer-picker {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 20000;
+} */
+
+/* //// */
+
+h3 {
+  font-family: courier;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+
+}
+
+h4 {
+color: #FFFFFF;
+
+
+}
+
+.menu {
+  display: inline;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: courier;
+
+}
+
+.menulink
+{
+  display: inline; 
+  color:white;
+  text-align: center;
+  text-decoration: none; 
+  background-color: none;
+}
+
+.menutext {
+  position: absolute;
+  display: inline; 
+  z-index: 15;
+  right: 10%;
+  left: 10%;
+  font-family: courier;
+  font-size: 20px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+
+}
+
+button {
+  background-color: #109e8a;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  text-align: center;
+  font-family: courier;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 50px;
+  position: absolute;
+  right: 30px;
+  z-index: 300;
+}
+
+.sidebar {
+  background: #eb5b1c;
+  position: absolute;
+  right: 0px;
+  float: right;
+  height: 100%;
+  opacity: 1;
+  padding: 10px;
+  width: 20%;
+  z-index: 100;
+}
