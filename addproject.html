@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add Project</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Load Leaflet CSS -->
+    <link href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" rel="stylesheet">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/addproject.css">
+    
+    <!-- Load Leaflet and Carto libraries -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://libs.cartocdn.com/carto.js/v4.1.11/carto.min.js"></script>
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/addproject.js" defer></script>
+  </head>  
+  <body>
+    
+     <div class="menutext"> 
+    <a href="index.html"> <div class="menulink"><menutext>  HOME // </menutext> </div></a>
+       <a href="about.html"> <div class="menulink"><menutext>  ABOUT // </menutext></div></a>
+      <a href="old-maps.html"> <div class="menulink"><menutext>  OLD MAPS //</menutext></div></a>
+      <a href="popdots.html"> <div class="menulink"><menutext>  POPULATION DOTS // </menutext></div></a>
+      <a href="watermanag.html"> <div class="menulink"><menutext>  WATER MANAGEMENT PROJECTS </menutext></div></a>
+  </div> 
+    <br>
+    
+    <h1>Add a Dutch Water Management Project</h1>
+    
+    <script type="text/javascript">var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://agisfinal-crot.glitch.me/thankyou.html';}"></iframe>
+    
+    <script>console.log(submitted);</script>
+    
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScoabiRi3mfNjy2PHiYr1I62FuucVvJxaII_vggx8adpuz9wQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+      <div>
+        <label for="project-name">project name</label>
+        <input id="project-name" type="text" name="entry.445721996"> </input>
+      </div>
+      <div>
+        <label for="project-country">project country</label>
+        <input id="project-country" type="text" name="entry.1223704712"></input>
+      </div>
+      <div>
+        <label for="project-city">project city</label>
+        <input id="project-city" type="text" name="entry.1363179539"></input>
+      </div>
+      <div>
+        <label for="project-firm">project firm</label>
+        <input id="project-firm" type="text" name="entry.417101059"></input>
+      </div>
+      <div>
+        <label for="project-url">project url</label>
+        <input id="project-url" type="text" name="entry.1979765192"></input>
+      </div>
+      <div>
+        <label for="project-description">project description</label>
+        <textarea id="project-description" name="entry.1450729010"></textarea>
+      </div>
+      <input class="longitude-field" id="longitude" type="hidden" name="entry.1671071519" />
+      <input class="latitude-field" id="latitude" type="hidden" name="entry.1122565041" />
+      
+      <div>
+        <br>
+        <p class="whereisit">
+          Where is it? Click the map to add a point.
+        </p>
+      </div>
+      <div id="map"></div>
+      
+      <input class="submitbutton" type="submit" value="Submit" />
+    </form>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
+
